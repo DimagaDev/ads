@@ -102,77 +102,79 @@
         </div>
     </section>
     <section id="collBack">
-        <div>
-            <div class="mapSection">
-                <img class="logo" src="img/logo.svg" alt="Logo">
-                <div class="mapSection__lists">
-                    <div class="mapSection__list">
-                        <p class="mapSection__text">Телефон</p>
-                        <a href="tel:+001 987-654-3210"><p class="telNumber">+001 987-654-3210</p></a>
-                    </div>
-                    <div class="mapSection__list">
-                        <p class="f">f</p>
-                        <a href="tel:+001 987-654-3210">
-                            <p class="telNumber">+001 987-654-3210</p>
-                        </a>
-                    </div>
-                    <div class="mapSection__list">
-                        <p class="mapSection__text">Email</p>
-                        <a href="mailto:info@example.com"><p class="mail">info@example.com</p></a>
-                    </div>
-                    <div class="mapSection__list">
-                        <p class="mapSection__text">Адрес</p>
-                        <p class="adress">улица Лаврская, 27, Киев, 02000</p>
+        <div class="collBack">
+            <div>
+                <div class="mapSection">
+                    <img class="logo" src="img/logo.svg" alt="Logo">
+                    <div class="mapSection__lists">
+                        <div class="mapSection__list">
+                            <p class="mapSection__text">Телефон</p>
+                            <a href="tel:+001 987-654-3210"><p class="telNumber">+001 987-654-3210</p></a>
+                        </div>
+                        <div class="mapSection__list">
+                            <p class="f">f</p>
+                            <a href="tel:+001 987-654-3210">
+                                <p class="telNumber">+001 987-654-3210</p>
+                            </a>
+                        </div>
+                        <div class="mapSection__list">
+                            <p class="mapSection__text">Email</p>
+                            <a href="mailto:info@example.com"><p class="mail">info@example.com</p></a>
+                        </div>
+                        <div class="mapSection__list">
+                            <p class="mapSection__text">Адрес</p>
+                            <p class="adress">улица Лаврская, 27, Киев, 02000</p>
+                        </div>
                     </div>
                 </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9595.347080330454!2d30.552805750819008!3d50.43218008057018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf76e65d4dad%3A0x247b398f405dff8f!2z0KDQvtC00LjQvdCwLdCc0LDRgtGM!5e0!3m2!1sru!2sua!4v1650394363582!5m2!1sru!2sua"
+                        width="680"
+                        height="299" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9595.347080330454!2d30.552805750819008!3d50.43218008057018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf76e65d4dad%3A0x247b398f405dff8f!2z0KDQvtC00LjQvdCwLdCc0LDRgtGM!5e0!3m2!1sru!2sua!4v1650394363582!5m2!1sru!2sua"
-                    width="680"
-                    height="299" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <div class="contactForm">
+                <b class="contactForm__quest">Есть вопросы?</b>
+                <p>Свяжитесь с нами</p>
+                    <div class="form">
+                        <div class="form__list">
+                            <form autocomplete="on" name="formConnection">
+                                <p>
+                                    <input required name="name" pattern="[а-яa-z]*" type="text" placeholder="Имя">
+                                </p>
+                                <p>
+                                    <input required name="email" type="email" placeholder="Email">
+                                </p>
+                                <p>
+                                    <input type="text" name="tell" placeholder="+3999 999-99-99">
+                                </p>
+                                <p>
+                                    <textarea name="usermessage" placeholder="Ваше сообщение"></textarea>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="form__btn">
+                            <div>
+                                <input class="btn" type="submit" value="Отправить">
+                            </div>
+                            <div>
+                                <input class="checkbox" type="checkbox" name="ansver" value="Question">
+                            </div>
+                            <div class="checkbox__qest">
+                                <p>
+                                    Я прочитал и принимаю условия 
+                                    <a href="#"><p>пользовательского соглашения</p></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>        
             </div>
-        </div>
-        <div class="contactForm">
-            <b class="contactForm__quest">Есть вопросы?</b>
-            <p>Свяжитесь с нами</p>
-                <div class="form">
-                    <div class="form__list">
-                        <form autocomplete="on" name="formConnection">
-                            <p>
-                                <input required name="name" pattern="[а-яa-z]*" type="text" placeholder="Имя">
-                            </p>
-                            <p>
-                                <input required name="email" type="email" placeholder="Email">
-                            </p>
-                            <p>
-                                <input type="text" name="tell" placeholder="+3999 999-99-99">
-                            </p>
-                            <p>
-                                <textarea name="usermessage" placeholder="Ваше сообщение"></textarea>
-                            </p>
-                        </form>
-                    </div>
-                    <div class="form__btn">
-                        <div>
-                            <input class="btn" type="submit" value="Отправить">
-                        </div>
-                        <div>
-                            <input class="checkbox" type="checkbox" name="ansver" value="Question">
-                        </div>
-                        <div class="checkbox__qest">
-                            <p>
-                                Я прочитал и принимаю условия 
-                                <a href="#"><p>пользовательского соглашения</p></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>        
         </div>
     </section>
     <footer>
